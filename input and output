@@ -1,0 +1,27 @@
+#helloworld
+    print('hello world')
+#helloworld with tab
+    print("Hello World\tHello World")
+#helloworld with new line
+    print("Hello World\nHello World")
+#integer input
+    x = int(input())#python
+    print(x)
+#float input
+    a = float(input())
+    print(round(a,2))
+#character input
+    char = input()
+    print(char)
+#string input
+    name = input()
+    print(name)
+#ascii -1
+    char = input()
+    x = ord(char)
+    print(x)
+#ascii - 2
+    integer = int(input())
+    character = chr(integer)
+    print(character)
+
