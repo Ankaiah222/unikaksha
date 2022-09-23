@@ -1,0 +1,42 @@
+Dora is interested so much in gardening and she plants more trees in her garden. She plants trees in a rectangular fashion with the order of rows and columns and
+numbered the trees in row-wise order. She planted the mango tree only in a 1st row, 1st column and last column. So given the tree number, your task is to find whether
+the given tree is a mango tree or not?Write a program to check whether the given number is a mango tree or not. 
+Sample Input:
+5
+5
+11  
+Sample Output:
+Yes
+
+Solution:
+
+no_of_rows = int(input())
+no_of_columns = int(input())
+m_tree_no = int(input())
+result_1 = False
+result_2 = False
+result_3 = False
+#1st_row
+for i in range(1,no_of_columns+1):
+    if i == m_tree_no:
+        result1_1 = True
+        break
+#1st column
+sum = 1
+for j in range(1,no_of_columns+1):
+    if sum == m_tree_no:
+        result_2 = True
+        break
+    else:
+        sum = sum + no_of_columns
+#last column
+for i in range(1,no_of_rows+1):
+    if no_of_columns*i == m_tree_no:
+        result1_3 = True
+        break
+if result_1 or result_2 or result_3:
+    print("Yes")
+else:
+    print("No")
+
+
