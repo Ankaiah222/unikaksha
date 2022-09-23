@@ -1,0 +1,22 @@
+Write a Python Program to find the largest number in a list
+Sample Input:
+5
+1
+2
+3
+6
+5
+Sample Output:
+6
+
+Solution:
+n = int(input())
+greatest = int(input())
+for i in range(2,n+1):
+    a = int(input())
+    if a > greatest:
+        greatest = a
+    else:
+        greatest = greatest
+print(greatest)
+    
