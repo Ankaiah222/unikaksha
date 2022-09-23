@@ -1,0 +1,17 @@
+Write a program to find the sum of numbers in a given range is discussed here. Given the starting and ending interval, the sum of all the numbers in that range will 
+be displayed as output.
+Sample Input 1:
+1
+10
+Sample Output 1:
+55
+
+Solution:
+m = int(input())
+n = int(input())
+sum = 0
+for i in range(m,n+1):
+    sum = sum + i
+print(sum)
+    
+
