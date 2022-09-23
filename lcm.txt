@@ -1,0 +1,25 @@
+Write a program to find LCM of two numbers is discussed here. Two numbers are obtained as input and the prime factors of both the numbers are found. The product of 
+the union of prime factors of both the numbers gives the LCM of the two numbers.
+Sample Input:
+5
+30
+Sample Output:
+LCM of 5 and 30 is 30
+
+Solution:
+m = int(input())
+n = int(input())
+if m > n:
+    greatest = m
+else:
+    greatest = n
+for i in range(greatest,m*n):
+    if (i%m == 0) and (i%n == 0):
+        lcm = i
+        break
+print("Lcm of "+str(m)+" and "+str(n)+" is "+str(lcm))
+    
+
+
+
+
