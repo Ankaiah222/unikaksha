@@ -1,0 +1,28 @@
+Write a Python Program to replace all occurrences of ‘a’ with ‘$’ in a string.
+Sample Input:
+Cyfuno
+y
+%
+Sample Output:
+Modified string:
+C%funo
+
+Solution:
+word = input()
+word = word.lower()
+char = input()
+char = char.lower()
+symbol = input()
+symbol = symbol.lower()
+length = len(word)
+index = 0
+for i in range(length):
+    if word[i] == char:
+        index = i
+        break
+new_word = word[:index]+symbol+word[index+1:]
+print("Modified string:")
+print(new_word)
+
+    
+
