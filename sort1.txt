@@ -1,0 +1,20 @@
+Write a python code to arrange the characters in ascending order of the given String
+Sample Input & Output:
+cyfuno
+cfnouy
+
+Solution:
+word = "abcdefghijklmnopqrstuvwxyz"
+words_list = list(word)
+#print(words_list)
+user_word = input()
+user_word = user_word.lower()
+user_list = list(user_word)
+#print(user_list)
+result = ""
+for each_item in words_list:
+    for each_char in user_list:
+        if each_item == each_char:
+            result = result + each_char
+print(result)
+    
