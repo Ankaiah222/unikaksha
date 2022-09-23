@@ -1,0 +1,26 @@
+Write a program that asks a user for their birth year encoded as two digits (like "62") and for the current year, also encoded as two digits (like "99"). 
+The program is to correctly write out the user’s age in years.
+Sample Input and Output:
+Enter Year of Birth
+62
+Enter Current year
+99
+Your age is 37
+
+Solution:
+print("Enter Year of Birth")
+y_of_b = int(input())
+print("Enter Current year")
+c_of_y = int(input())
+if c_of_y > 9:
+    print("Your age is "+str(c_of_y - y_of_b))
+else:
+    c_of_y = 100+c_of_y
+    result = c_of_y - y_of_b
+    print("Your age is "+str(result))
+#else:
+    #c_of_y = c_of_y + 100
+    #result = c_of_y - y_of_b
+    #print("Your age is "+str(result))
+    #elif c_of_y == 00 :
+    
