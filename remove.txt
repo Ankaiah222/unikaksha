@@ -1,0 +1,15 @@
+Write a Python Program to remove the nth index character from a non-empty string.
+Sample Input :
+Cyfuno
+2
+Sample Output:
+Cyuno
+
+
+Solution:
+word = input()
+index = int(input())
+new_word = word[:index]+word[index+1:]
+print(new_word)
+
+
