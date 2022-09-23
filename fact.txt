@@ -1,0 +1,24 @@
+Write a program to determine whether n is a factorial number or not. A factorial number is a number that is a factorial of another number.
+Sample Input 1:
+6
+Sample Output 1:
+yes
+
+Solution:
+user_input = int(input())
+sum  = 0
+for i in range(1,user_input):
+    #fact_number = fact_number*i
+    if user_input % i == 0:
+        sum = sum + i
+if sum == user_input:
+    print("yes")
+else:
+    print("no")
+
+
+    
+        
+        
+        
+        
