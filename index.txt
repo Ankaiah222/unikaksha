@@ -1,0 +1,12 @@
+Write a Python Program to remove the nth index character from a non-empty string.
+Sample Input & Output:
+cyfuno technologies
+4
+cyfuo technologies
+
+Solution:
+word = input()
+index = int(input())
+new_word = word[:index]+word[index+1:]
+print(new_word)
+
