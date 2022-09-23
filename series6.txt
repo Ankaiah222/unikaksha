@@ -1,0 +1,13 @@
+Write a program to generate the following series --- 0,2,8,14,...,34 
+Sample Input & Output:
+5
+0 2 8 14 24 
+
+Solution:
+user_input = int(input())
+first_term = 0
+second_term = 2
+result = str(first_term) + " "+str(second_term)+" "
+for i in range(2,user_input):
+    result = result + str(2**i+2*i)+" "
+print(result)
