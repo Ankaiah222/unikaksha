@@ -1,0 +1,54 @@
+Write a program to determine the fee amount to be collected from a student. The input to the program are the type of the student, tuition fee, bus fee, hostel fee.
+Refer the table below for fee details.
+
+Student Type                        Student Type denoted as                                 Fee Details
+
+Merit Seat Day Scholar                     MSDS                                         Tuition fee + Bus fee
+Merit Seat Hosteller                       MSH                                         Tuition fee + Hostel fee
+Management Seat Day Scholar               MGSDS                                      150% of Tuition fee + Bus fee
+Management Seat Hosteller                  MGSH                                    150% of Tuition fee + Hostel fee
+
+Sample Input and Output:
+Enter the student type
+MSH
+Enter tuition fee
+40000
+Enter hostel fee
+50000
+The fees to be paid by the student is Rs.90000.00
+
+Solution:
+print("Enter the student type")
+student_type = input()
+student_type=student_type.upper()
+if student_type == "MSDS":
+    print("Enter tuition fee")
+    tuition_fee = float(input())
+    print("Enter bus fee")
+    bus_fee = float(input())
+    total_fee = tuition_fee + bus_fee
+    print("The fees to be paid by the student is Rs."+"%.2f" %total_fee)
+if student_type == "MSH":
+    print("Enter tuition fee")
+    tuition_fee = float(input())
+    print("Enter hostel fee")
+    hostel_fee = float(input())
+    total_fee = tuition_fee + hostel_fee
+    print("The fees to be paid by the student is Rs."+"%.2f" %total_fee)
+elif student_type == "MGSDS":
+    print("Enter tuition fee")
+    tuition_fee = float(input())
+    print("Enter bus fee")
+    bus_fee = float(input())
+    total_fee = (150/100)*tuition_fee + bus_fee
+    print("The fees to be paid by the student is Rs."+"%.2f" %total_fee)
+elif student_type == "MGSH":
+    print("Enter tuition fee")
+    tuition_fee = float(input())
+    print("Enter hostel fee")
+    hostel_fee = float(input())
+    total_fee = (150/100)*tuition_fee + hostel_fee
+    print("The fees to be paid by the student is Rs."+"%.2f" %total_fee)
+
+    
+ 
