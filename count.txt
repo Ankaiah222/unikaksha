@@ -1,0 +1,18 @@
+Write a  Python Program to calculate the number of words and characters present in a string.
+Sample Input & Output:
+Cyfuno
+1
+6
+
+Solution:
+s = input()
+count = 0
+word_count = 1
+for i in s:
+    if i == " ":
+        word_count = word_count + 1
+print(word_count) 
+for i in s:
+    count = count + 1
+print(count)
+    
