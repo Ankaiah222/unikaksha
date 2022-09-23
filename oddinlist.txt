@@ -1,0 +1,23 @@
+Write a Python Program to put the even and odd elements in a list into two different lists.
+Sample Input & Output:
+5
+1
+2
+3
+6
+5
+The even list [2, 6]
+The odd list [1, 3, 5]
+
+Solution:
+n = int(input())
+even_list = []
+odd_list = []
+for i in range(1,n+1):
+    a = int(input())
+    if a % 2 == 0:
+        even_list = even_list + [a]
+    else:
+        odd_list = odd_list +[a]
+print("The even list"+str(even_list))
+print("The odd list"+str(odd_list))
