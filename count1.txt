@@ -1,0 +1,20 @@
+Write a Python Program to calculate the number of digits and letters in a string. Problem Description The program takes a string and calculates the number of
+digits and letters in a string. 
+Sample Input & Output:
+Cyfuno2020
+Characters = 6
+Digits = 4
+
+Solution:
+word = input()
+digit_count = 0
+char_count = 0
+for i in word:
+    if i.isdigit():
+        digit_count = digit_count + 1
+    else:
+        char_count  = char_count + 1
+print("Characters = "+str(char_count))
+print("Digits = "+str(digit_count))
+
+        
